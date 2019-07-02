@@ -1,0 +1,358 @@
+EESchema Schematic File Version 5
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "IR Receiver"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5D1D6FB7
+P 7700 2700
+F 0 "J1" H 7650 2900 50  0000 L CNN
+F 1 "Conn_01x03" H 7618 2926 50  0001 C CNN
+F 2 "" H 7700 2700 50  0001 C CNN
+F 3 "~" H 7700 2700 50  0001 C CNN
+	1    7700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1D7AF0
+P 7300 2950
+F 0 "#PWR?" H 7300 2700 50  0001 C CNN
+F 1 "GND" H 7305 2777 50  0000 C CNN
+F 2 "" H 7300 2950 50  0001 C CNN
+F 3 "" H 7300 2950 50  0001 C CNN
+	1    7300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D1D7DE7
+P 7300 2500
+F 0 "#PWR?" H 7300 2350 50  0001 C CNN
+F 1 "+5V" H 7315 2673 50  0000 C CNN
+F 2 "" H 7300 2500 50  0001 C CNN
+F 3 "" H 7300 2500 50  0001 C CNN
+	1    7300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2500 7300 2600
+Wire Wire Line
+	7300 2600 7500 2600
+Wire Wire Line
+	7500 2800 7300 2800
+Wire Wire Line
+	7300 2800 7300 2950
+$Comp
+L Device:D_Photo D1
+U 1 1 5D1D8DB1
+P 6450 4000
+F 0 "D1" V 6354 4157 50  0000 L CNN
+F 1 "TEMD5080X01" V 6445 4157 50  0000 L CNN
+F 2 "" H 6400 4000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/81643/temd5080.pdf" H 6400 4000 50  0001 C CNN
+	1    6450 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Photo D2
+U 1 1 5D1DA9F2
+P 6050 4000
+F 0 "D2" V 5950 4250 50  0000 R CNN
+F 1 "TEMD5080X01" V 5955 3922 50  0001 R CNN
+F 2 "" H 6000 4000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/81643/temd5080.pdf" H 6000 4000 50  0001 C CNN
+	1    6050 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Photo D3
+U 1 1 5D1DCB7E
+P 5650 4000
+F 0 "D3" V 5550 4250 50  0000 R CNN
+F 1 "TEMD5080X01" V 5555 3922 50  0001 R CNN
+F 2 "" H 5600 4000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/81643/temd5080.pdf" H 5600 4000 50  0001 C CNN
+	1    5650 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Photo D4
+U 1 1 5D1DD151
+P 5250 4000
+F 0 "D4" V 5150 4250 50  0000 R CNN
+F 1 "TEMD5080X01" V 5155 3922 50  0001 R CNN
+F 2 "" H 5200 4000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/81643/temd5080.pdf" H 5200 4000 50  0001 C CNN
+	1    5250 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Photo D5
+U 1 1 5D1DD6D2
+P 4850 4000
+F 0 "D5" V 4750 4250 50  0000 R CNN
+F 1 "TEMD5080X01" V 4755 3922 50  0001 R CNN
+F 2 "" H 4800 4000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/81643/temd5080.pdf" H 4800 4000 50  0001 C CNN
+	1    4850 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Photo D6
+U 1 1 5D1DFD45
+P 4450 4000
+F 0 "D6" V 4350 4250 50  0000 R CNN
+F 1 "TEMD5080X01" V 4355 3922 50  0001 R CNN
+F 2 "" H 4400 4000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/81643/temd5080.pdf" H 4400 4000 50  0001 C CNN
+	1    4450 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Photo D7
+U 1 1 5D1E12CB
+P 4050 4000
+F 0 "D7" V 3950 4250 50  0000 R CNN
+F 1 "TEMD5080X01" V 3955 3922 50  0001 R CNN
+F 2 "" H 4000 4000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/81643/temd5080.pdf" H 4000 4000 50  0001 C CNN
+	1    4050 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Photo D10
+U 1 1 5D1E12CC
+P 2850 4000
+F 0 "D10" V 2750 4250 50  0000 R CNN
+F 1 "TEMD5080X01" V 2755 3922 50  0001 R CNN
+F 2 "" H 2800 4000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/81643/temd5080.pdf" H 2800 4000 50  0001 C CNN
+	1    2850 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Photo D8
+U 1 1 5D1E12CD
+P 3650 4000
+F 0 "D8" V 3550 4250 50  0000 R CNN
+F 1 "TEMD5080X01" V 3555 3922 50  0001 R CNN
+F 2 "" H 3600 4000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/81643/temd5080.pdf" H 3600 4000 50  0001 C CNN
+	1    3650 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Photo D9
+U 1 1 5D1E12CE
+P 3250 4000
+F 0 "D9" V 3150 4250 50  0000 R CNN
+F 1 "TEMD5080X01" V 3155 3922 50  0001 R CNN
+F 2 "" H 3200 4000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/81643/temd5080.pdf" H 3200 4000 50  0001 C CNN
+	1    3250 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1E3925
+P 6450 4200
+F 0 "#PWR?" H 6450 3950 50  0001 C CNN
+F 1 "GND" H 6455 4027 50  0000 C CNN
+F 2 "" H 6450 4200 50  0001 C CNN
+F 3 "" H 6450 4200 50  0001 C CNN
+	1    6450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4100 3650 4150
+Wire Wire Line
+	3650 4150 4050 4150
+Wire Wire Line
+	6450 4150 6450 4200
+Wire Wire Line
+	6450 4150 6450 4100
+Connection ~ 6450 4150
+Wire Wire Line
+	2850 4100 2850 4150
+Wire Wire Line
+	2850 4150 3250 4150
+Connection ~ 3650 4150
+Wire Wire Line
+	3250 4100 3250 4150
+Connection ~ 3250 4150
+Wire Wire Line
+	3250 4150 3650 4150
+Wire Wire Line
+	4050 4100 4050 4150
+Connection ~ 4050 4150
+Wire Wire Line
+	4050 4150 4450 4150
+Wire Wire Line
+	4450 4100 4450 4150
+Connection ~ 4450 4150
+Wire Wire Line
+	4450 4150 4850 4150
+Wire Wire Line
+	4850 4100 4850 4150
+Connection ~ 4850 4150
+Wire Wire Line
+	4850 4150 5250 4150
+Wire Wire Line
+	5250 4100 5250 4150
+Connection ~ 5250 4150
+Wire Wire Line
+	5250 4150 5650 4150
+Wire Wire Line
+	5650 4100 5650 4150
+Connection ~ 5650 4150
+Wire Wire Line
+	5650 4150 6050 4150
+Wire Wire Line
+	6050 4100 6050 4150
+Connection ~ 6050 4150
+Wire Wire Line
+	6050 4150 6450 4150
+$Comp
+L Device:Opamp_Dual_Generic IC1
+U 1 1 5D1EFCD4
+P 5550 2700
+F 0 "IC1" H 5550 2975 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 5550 2976 50  0001 C CNN
+F 2 "" H 5550 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa381.pdf" H 5550 2700 50  0001 C CNN
+	1    5550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1F0AEE
+P 5100 2600
+F 0 "#PWR?" H 5100 2350 50  0001 C CNN
+F 1 "GND" H 5105 2427 50  0000 C CNN
+F 2 "" H 5100 2600 50  0001 C CNN
+F 3 "" H 5100 2600 50  0001 C CNN
+	1    5100 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 2600 5250 2600
+Wire Wire Line
+	5850 2700 6000 2700
+$Comp
+L Device:R R?
+U 1 1 5D1F1245
+P 5500 3100
+F 0 "R?" V 5550 2900 50  0000 C CNN
+F 1 "R" V 5600 3100 50  0000 C CNN
+F 2 "" V 5430 3100 50  0001 C CNN
+F 3 "~" H 5500 3100 50  0001 C CNN
+	1    5500 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D1F237B
+P 5500 3450
+F 0 "C?" V 5450 3600 50  0000 C CNN
+F 1 "C" V 5339 3450 50  0000 C CNN
+F 2 "" H 5538 3300 50  0001 C CNN
+F 3 "~" H 5500 3450 50  0001 C CNN
+	1    5500 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3100 6000 3100
+Wire Wire Line
+	6000 3100 6000 2700
+Connection ~ 6000 2700
+Wire Wire Line
+	6000 2700 7500 2700
+Wire Wire Line
+	5650 3450 6000 3450
+Wire Wire Line
+	6000 3450 6000 3100
+Connection ~ 6000 3100
+Wire Wire Line
+	5250 2800 5100 2800
+Wire Wire Line
+	5100 2800 5100 3100
+Wire Wire Line
+	5100 3450 5350 3450
+Wire Wire Line
+	5350 3100 5100 3100
+Connection ~ 5100 3100
+Wire Wire Line
+	5100 3100 5100 3450
+Wire Wire Line
+	2850 3800 2850 3700
+Wire Wire Line
+	2850 3700 3250 3700
+Wire Wire Line
+	6450 3700 6450 3800
+Wire Wire Line
+	3250 3800 3250 3700
+Connection ~ 3250 3700
+Wire Wire Line
+	3250 3700 3650 3700
+Wire Wire Line
+	3650 3800 3650 3700
+Connection ~ 3650 3700
+Wire Wire Line
+	3650 3700 4050 3700
+Wire Wire Line
+	4050 3800 4050 3700
+Connection ~ 4050 3700
+Wire Wire Line
+	4050 3700 4250 3700
+Wire Wire Line
+	4450 3800 4450 3700
+Connection ~ 4450 3700
+Wire Wire Line
+	4450 3700 4850 3700
+Wire Wire Line
+	4850 3800 4850 3700
+Connection ~ 4850 3700
+Wire Wire Line
+	4850 3700 5250 3700
+Wire Wire Line
+	5250 3800 5250 3700
+Connection ~ 5250 3700
+Wire Wire Line
+	5250 3700 5650 3700
+Wire Wire Line
+	5650 3800 5650 3700
+Connection ~ 5650 3700
+Wire Wire Line
+	5650 3700 6050 3700
+Wire Wire Line
+	6050 3800 6050 3700
+Connection ~ 6050 3700
+Wire Wire Line
+	6050 3700 6450 3700
+Wire Wire Line
+	5100 2800 4250 2800
+Wire Wire Line
+	4250 2800 4250 3700
+Connection ~ 5100 2800
+Connection ~ 4250 3700
+Wire Wire Line
+	4250 3700 4450 3700
+Text Notes 7800 2650 0    50   ~ 0
++5V, ? mA
+Text Notes 7800 2850 0    50   ~ 0
+Ground
+Text Notes 7800 2750 0    50   ~ 0
+Receiver output\n
+$EndSCHEMATC

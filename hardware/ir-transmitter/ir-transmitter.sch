@@ -1,0 +1,338 @@
+EESchema Schematic File Version 5
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "IR Transmitter"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5D1BC1E6
+P 4500 2750
+F 0 "D1" V 4539 2632 50  0000 R CNN
+F 1 "IR333-A" V 4448 2632 50  0000 R CNN
+F 2 "" H 4500 2750 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 4500 2750 50  0001 C CNN
+	1    4500 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 3450 4500 3350
+Wire Wire Line
+	4500 3050 4500 2900
+Wire Wire Line
+	4500 2600 4500 2500
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5D1C0985
+P 2300 3300
+F 0 "J1" H 2300 3500 50  0000 C CNN
+F 1 "Conn_01x04" H 2218 3526 50  0001 C CNN
+F 2 "" H 2300 3300 50  0001 C CNN
+F 3 "~" H 2300 3300 50  0001 C CNN
+	1    2300 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1C12CE
+P 4500 4250
+F 0 "#PWR?" H 4500 4000 50  0001 C CNN
+F 1 "GND" H 4500 4100 50  0000 C CNN
+F 2 "" H 4500 4250 50  0001 C CNN
+F 3 "" H 4500 4250 50  0001 C CNN
+	1    4500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1C12FF
+P 2750 3550
+F 0 "#PWR?" H 2750 3300 50  0001 C CNN
+F 1 "GND" H 2755 3377 50  0000 C CNN
+F 2 "" H 2750 3550 50  0001 C CNN
+F 3 "" H 2750 3550 50  0001 C CNN
+	1    2750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_DGS T1
+U 1 1 5D1C1F00
+P 4400 4050
+F 0 "T1" H 4606 4096 50  0000 L CNN
+F 1 "BSH111" H 4606 4005 50  0000 L CNN
+F 2 "" H 4600 4150 50  0001 C CNN
+F 3 "~" H 4400 4050 50  0001 C CNN
+	1    4400 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D1C6D55
+P 4050 4050
+F 0 "R2" V 3843 4050 50  0000 C CNN
+F 1 "1K" V 3934 4050 50  0000 C CNN
+F 2 "" V 3980 4050 50  0001 C CNN
+F 3 "~" H 4050 4050 50  0001 C CNN
+	1    4050 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5D1C73A5
+P 2600 4450
+F 0 "C1" H 2718 4496 50  0000 L CNN
+F 1 "10µF" H 2718 4405 50  0000 L CNN
+F 2 "" H 2638 4300 50  0001 C CNN
+F 3 "~" H 2600 4450 50  0001 C CNN
+	1    2600 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D1C84CC
+P 4500 2500
+F 0 "#PWR?" H 4500 2350 50  0001 C CNN
+F 1 "+5V" H 4515 2673 50  0000 C CNN
+F 2 "" H 4500 2500 50  0001 C CNN
+F 3 "" H 4500 2500 50  0001 C CNN
+	1    4500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D1C9524
+P 2750 3050
+F 0 "#PWR?" H 2750 2900 50  0001 C CNN
+F 1 "+5V" H 2765 3223 50  0000 C CNN
+F 2 "" H 2750 3050 50  0001 C CNN
+F 3 "" H 2750 3050 50  0001 C CNN
+	1    2750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3750 4500 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5D1CC8CB
+P 6000 4300
+F 0 "#PWR?" H 6000 4050 50  0001 C CNN
+F 1 "GND" H 6000 4150 50  0000 C CNN
+F 2 "" H 6000 4300 50  0001 C CNN
+F 3 "" H 6000 4300 50  0001 C CNN
+	1    6000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2650 6000 2550
+Wire Wire Line
+	6000 3500 6000 3400
+Wire Wire Line
+	6000 3100 6000 2950
+$Comp
+L Device:Q_PMOS_DGS T2
+U 1 1 5D1CC8CE
+P 5900 4100
+F 0 "T2" H 6106 4146 50  0000 L CNN
+F 1 "BSH111" H 6106 4055 50  0000 L CNN
+F 2 "" H 6100 4200 50  0001 C CNN
+F 3 "~" H 5900 4100 50  0001 C CNN
+	1    5900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D1CC8CF
+P 6000 2550
+F 0 "#PWR?" H 6000 2400 50  0001 C CNN
+F 1 "+5V" H 6015 2723 50  0000 C CNN
+F 2 "" H 6000 2550 50  0001 C CNN
+F 3 "" H 6000 2550 50  0001 C CNN
+	1    6000 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3800 6000 3900
+$Comp
+L Device:R R4
+U 1 1 5D1CC8D0
+P 5550 4100
+F 0 "R4" V 5343 4100 50  0000 C CNN
+F 1 "1K" V 5434 4100 50  0000 C CNN
+F 2 "" V 5480 4100 50  0001 C CNN
+F 3 "~" H 5550 4100 50  0001 C CNN
+	1    5550 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 3300 3150 3300
+Wire Wire Line
+	3150 4050 3500 4050
+Wire Wire Line
+	2500 3400 3050 3400
+Wire Wire Line
+	5300 4100 5400 4100
+Wire Wire Line
+	3150 3300 3150 4050
+Wire Wire Line
+	2500 3500 2750 3500
+Wire Wire Line
+	2750 3500 2750 3550
+Wire Wire Line
+	2500 3200 2750 3200
+Wire Wire Line
+	2750 3200 2750 3050
+Text Notes 1750 3250 0    50   ~ 0
++5V, 200mA
+Text Notes 1950 3550 0    50   ~ 0
+Ground
+Text Notes 1750 3350 0    50   ~ 0
+Enable row1
+Text Notes 1750 3450 0    50   ~ 0
+Enable row2
+$Comp
+L Device:R R1
+U 1 1 5D1CF057
+P 3500 4250
+F 0 "R1" V 3293 4250 50  0000 C CNN
+F 1 "10K" V 3384 4250 50  0000 C CNN
+F 2 "" V 3430 4250 50  0001 C CNN
+F 3 "~" H 3500 4250 50  0001 C CNN
+	1    3500 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D1CF3B4
+P 3500 4900
+F 0 "R3" V 3293 4900 50  0000 C CNN
+F 1 "10K" V 3384 4900 50  0000 C CNN
+F 2 "" V 3430 4900 50  0001 C CNN
+F 3 "~" H 3500 4900 50  0001 C CNN
+	1    3500 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1CF98B
+P 3500 4400
+F 0 "#PWR?" H 3500 4150 50  0001 C CNN
+F 1 "GND" H 3505 4227 50  0000 C CNN
+F 2 "" H 3500 4400 50  0001 C CNN
+F 3 "" H 3500 4400 50  0001 C CNN
+	1    3500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4700 3500 4700
+Wire Wire Line
+	3050 3400 3050 4700
+Wire Wire Line
+	5300 4100 5300 4700
+$Comp
+L power:GND #PWR?
+U 1 1 5D1D0570
+P 3500 5050
+F 0 "#PWR?" H 3500 4800 50  0001 C CNN
+F 1 "GND" H 3505 4877 50  0000 C CNN
+F 2 "" H 3500 5050 50  0001 C CNN
+F 3 "" H 3500 5050 50  0001 C CNN
+	1    3500 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4750 3500 4700
+Connection ~ 3500 4700
+Wire Wire Line
+	3500 4700 5300 4700
+Wire Wire Line
+	3500 4100 3500 4050
+Connection ~ 3500 4050
+Wire Wire Line
+	3500 4050 3900 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5D1D0D5B
+P 2600 4600
+F 0 "#PWR?" H 2600 4350 50  0001 C CNN
+F 1 "GND" H 2605 4427 50  0000 C CNN
+F 2 "" H 2600 4600 50  0001 C CNN
+F 3 "" H 2600 4600 50  0001 C CNN
+	1    2600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D1D103E
+P 2600 4300
+F 0 "#PWR?" H 2600 4150 50  0001 C CNN
+F 1 "+5V" H 2615 4473 50  0000 C CNN
+F 2 "" H 2600 4300 50  0001 C CNN
+F 3 "" H 2600 4300 50  0001 C CNN
+	1    2600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5D1D4409
+P 4500 3200
+F 0 "D2" V 4539 3082 50  0000 R CNN
+F 1 "IR333-A" V 4448 3082 50  0000 R CNN
+F 2 "" H 4500 3200 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 4500 3200 50  0001 C CNN
+	1    4500 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5D1D59BE
+P 4500 3600
+F 0 "D3" V 4539 3482 50  0000 R CNN
+F 1 "IR333-A" V 4448 3482 50  0000 R CNN
+F 2 "" H 4500 3600 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 4500 3600 50  0001 C CNN
+	1    4500 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5D1D5E30
+P 6000 2800
+F 0 "D4" V 6039 2682 50  0000 R CNN
+F 1 "IR333-A" V 5948 2682 50  0000 R CNN
+F 2 "" H 6000 2800 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 6000 2800 50  0001 C CNN
+	1    6000 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5D1D640D
+P 6000 3250
+F 0 "D5" V 6039 3132 50  0000 R CNN
+F 1 "IR333-A" V 5948 3132 50  0000 R CNN
+F 2 "" H 6000 3250 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 6000 3250 50  0001 C CNN
+	1    6000 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5D1D683A
+P 6000 3650
+F 0 "D6" V 6039 3532 50  0000 R CNN
+F 1 "IR333-A" V 5948 3532 50  0000 R CNN
+F 2 "" H 6000 3650 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 6000 3650 50  0001 C CNN
+	1    6000 3650
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
