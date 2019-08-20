@@ -1,37 +1,8 @@
-## Welcome to GitHub Pages
+## Insektenscanner
+Ziel dieses Projekts ist die Entwicklung eines Geräts zur Erkennung und Zählung verschiedener Insektenarten.
+Damit soll es dann Möglich sein, die Artenvielfalt und deren Veränderung engmaschig und lokal Erfassen zu können. Zusammen mit anderen Umweltdaten kann so eine Karte erstellt werden. Auch kann so die Ausbreitung invasiver Arten erfasst und verfolgt werden.
 
-You can use the [editor on GitHub](https://github.com/msei/insects-count/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Dazu wurden zwei Verfahren ausgewählt, um die Insekten erkennen und somit auch zählen zu können.
+- optisch mit Hilfe einer Kamera, die Erkennung erfolgt hier mit auf Insekten trainierter KI
+- [Erkennung des Flügelschlags mit einem optischen Mikrofon](http://msei.github.io/insects-count/docs/fluegelschlag.html)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/msei/insects-count/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
