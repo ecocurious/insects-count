@@ -1,0 +1,386 @@
+EESchema Schematic File Version 5
+LIBS:ir-transmitter-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Infrared  Transmitter"
+Date "2019-07-07"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5D1BC1E6
+P 6200 2900
+F 0 "D1" V 6239 2782 50  0000 R CNN
+F 1 "IR333-A" V 6148 2782 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6200 2900 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 6200 2900 50  0001 C CNN
+	1    6200 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 3600 6200 3500
+Wire Wire Line
+	6200 3200 6200 3050
+Wire Wire Line
+	6200 2750 6200 2650
+$Comp
+L power:GND #PWR0101
+U 1 1 5D1C12CE
+P 6200 4800
+F 0 "#PWR0101" H 6200 4550 50  0001 C CNN
+F 1 "GND" H 6200 4650 50  0001 C CNN
+F 2 "" H 6200 4800 50  0001 C CNN
+F 3 "" H 6200 4800 50  0001 C CNN
+	1    6200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5D1C12FF
+P 4300 4200
+F 0 "#PWR0102" H 4300 3950 50  0001 C CNN
+F 1 "GND" H 4305 4027 50  0001 C CNN
+F 2 "" H 4300 4200 50  0001 C CNN
+F 3 "" H 4300 4200 50  0001 C CNN
+	1    4300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D1C6D55
+P 5750 4600
+F 0 "R2" V 5543 4600 50  0000 C CNN
+F 1 "1K" V 5634 4600 50  0000 C CNN
+F 2 "resistors:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5680 4600 50  0001 C CNN
+F 3 "~" H 5750 4600 50  0001 C CNN
+	1    5750 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5D1C73A5
+P 4300 5000
+F 0 "C1" H 4418 5046 50  0000 L CNN
+F 1 "10µF" H 4418 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4338 4850 50  0001 C CNN
+F 3 "~" H 4300 5000 50  0001 C CNN
+	1    4300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5D1C84CC
+P 6200 2650
+F 0 "#PWR0103" H 6200 2500 50  0001 C CNN
+F 1 "+5V" H 6215 2823 50  0000 C CNN
+F 2 "" H 6200 2650 50  0001 C CNN
+F 3 "" H 6200 2650 50  0001 C CNN
+	1    6200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5D1C9524
+P 4300 3600
+F 0 "#PWR0104" H 4300 3450 50  0001 C CNN
+F 1 "+5V" H 4315 3773 50  0000 C CNN
+F 2 "" H 4300 3600 50  0001 C CNN
+F 3 "" H 4300 3600 50  0001 C CNN
+	1    4300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3900 6200 4000
+$Comp
+L power:GND #PWR0105
+U 1 1 5D1CC8CB
+P 8000 4850
+F 0 "#PWR0105" H 8000 4600 50  0001 C CNN
+F 1 "GND" H 8000 4700 50  0001 C CNN
+F 2 "" H 8000 4850 50  0001 C CNN
+F 3 "" H 8000 4850 50  0001 C CNN
+	1    8000 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D1CC8D0
+P 7550 4650
+F 0 "R4" V 7343 4650 50  0000 C CNN
+F 1 "1K" V 7434 4650 50  0000 C CNN
+F 2 "resistors:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7480 4650 50  0001 C CNN
+F 3 "~" H 7550 4650 50  0001 C CNN
+	1    7550 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 3850 4850 3850
+Wire Wire Line
+	4850 4600 5150 4600
+Wire Wire Line
+	4200 3950 4750 3950
+Wire Wire Line
+	7300 4650 7400 4650
+Wire Wire Line
+	4850 3850 4850 4600
+Text Notes 3450 3800 0    50   ~ 0
++5V, 200mA
+Text Notes 3650 4200 0    50   ~ 0
+Ground
+Text Notes 3450 3900 0    50   ~ 0
+Enable row1
+Text Notes 3450 4000 0    50   ~ 0
+Enable row2
+$Comp
+L Device:R R1
+U 1 1 5D1CF057
+P 5150 4800
+F 0 "R1" V 4943 4800 50  0000 C CNN
+F 1 "10K" V 5034 4800 50  0000 C CNN
+F 2 "resistors:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5080 4800 50  0001 C CNN
+F 3 "~" H 5150 4800 50  0001 C CNN
+	1    5150 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5D1CF98B
+P 5150 4950
+F 0 "#PWR0106" H 5150 4700 50  0001 C CNN
+F 1 "GND" H 5155 4777 50  0001 C CNN
+F 2 "" H 5150 4950 50  0001 C CNN
+F 3 "" H 5150 4950 50  0001 C CNN
+	1    5150 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4650 5150 4600
+Connection ~ 5150 4600
+$Comp
+L power:GND #PWR0107
+U 1 1 5D1D0D5B
+P 4300 5150
+F 0 "#PWR0107" H 4300 4900 50  0001 C CNN
+F 1 "GND" H 4305 4977 50  0001 C CNN
+F 2 "" H 4300 5150 50  0001 C CNN
+F 3 "" H 4300 5150 50  0001 C CNN
+	1    4300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 5D1D103E
+P 4300 4850
+F 0 "#PWR0108" H 4300 4700 50  0001 C CNN
+F 1 "+5V" H 4315 5023 50  0000 C CNN
+F 2 "" H 4300 4850 50  0001 C CNN
+F 3 "" H 4300 4850 50  0001 C CNN
+	1    4300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5D1D4409
+P 6200 3350
+F 0 "D2" V 6239 3232 50  0000 R CNN
+F 1 "IR333-A" V 6148 3232 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6200 3350 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 6200 3350 50  0001 C CNN
+	1    6200 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5D1D59BE
+P 6200 3750
+F 0 "D3" V 6239 3632 50  0000 R CNN
+F 1 "IR333-A" V 6148 3632 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6200 3750 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 6200 3750 50  0001 C CNN
+	1    6200 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD T1
+U 1 1 5D211548
+P 6100 4600
+F 0 "T1" H 6306 4646 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 6306 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6300 4700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BSH111BK.pdf" H 6100 4600 50  0001 C CNN
+	1    6100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD T2
+U 1 1 5D213A90
+P 7900 4650
+F 0 "T2" H 8106 4696 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 8106 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8100 4750 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BSH111BK.pdf" H 7900 4650 50  0001 C CNN
+	1    7900 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5D2163BB
+P 6200 4150
+F 0 "D4" V 6239 4032 50  0000 R CNN
+F 1 "IR333-A" V 6148 4032 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6200 4150 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 6200 4150 50  0001 C CNN
+	1    6200 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 4300 6200 4400
+$Comp
+L Device:LED D5
+U 1 1 5D216BAA
+P 8000 2950
+F 0 "D5" V 8039 2832 50  0000 R CNN
+F 1 "IR333-A" V 7948 2832 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 8000 2950 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 8000 2950 50  0001 C CNN
+	1    8000 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8000 4350 8000 4450
+Wire Wire Line
+	8000 3950 8000 4050
+$Comp
+L power:+5V #PWR0109
+U 1 1 5D216BAB
+P 8000 2700
+F 0 "#PWR0109" H 8000 2550 50  0001 C CNN
+F 1 "+5V" H 8015 2873 50  0000 C CNN
+F 2 "" H 8000 2700 50  0001 C CNN
+F 3 "" H 8000 2700 50  0001 C CNN
+	1    8000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2800 8000 2700
+Wire Wire Line
+	8000 3650 8000 3550
+Wire Wire Line
+	8000 3250 8000 3100
+$Comp
+L Device:LED D6
+U 1 1 5D216BAC
+P 8000 3400
+F 0 "D6" V 8039 3282 50  0000 R CNN
+F 1 "IR333-A" V 7948 3282 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 8000 3400 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 8000 3400 50  0001 C CNN
+	1    8000 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5D216BAD
+P 8000 3800
+F 0 "D7" V 8039 3682 50  0000 R CNN
+F 1 "IR333-A" V 7948 3682 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 8000 3800 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 8000 3800 50  0001 C CNN
+	1    8000 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5D216BAE
+P 8000 4200
+F 0 "D8" V 8039 4082 50  0000 R CNN
+F 1 "IR333-A" V 7948 4082 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 8000 4200 50  0001 C CNN
+F 3 "http://www.everlight.com/file/ProductFile/IR333-A.pdf" H 8000 4200 50  0001 C CNN
+	1    8000 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 X1
+U 1 1 5D22B5DC
+P 4000 3950
+F 0 "X1" H 4000 4250 50  0000 C CNN
+F 1 "Conn_01x05" H 3918 4276 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4000 3950 50  0001 C CNN
+F 3 "~" H 4000 3950 50  0001 C CNN
+	1    4000 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4150 4300 4150
+Wire Wire Line
+	4300 4150 4300 4200
+NoConn ~ 4200 4050
+Wire Wire Line
+	4750 3950 4750 5250
+Wire Wire Line
+	7300 4650 7300 5250
+$Comp
+L power:GND #PWR0110
+U 1 1 5D1D0570
+P 5150 5600
+F 0 "#PWR0110" H 5150 5350 50  0001 C CNN
+F 1 "GND" H 5155 5427 50  0001 C CNN
+F 2 "" H 5150 5600 50  0001 C CNN
+F 3 "" H 5150 5600 50  0001 C CNN
+	1    5150 5600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 5250
+$Comp
+L Device:R R3
+U 1 1 5D1CF3B4
+P 5150 5450
+F 0 "R3" V 4943 5450 50  0000 C CNN
+F 1 "10K" V 5034 5450 50  0000 C CNN
+F 2 "resistors:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5080 5450 50  0001 C CNN
+F 3 "~" H 5150 5450 50  0001 C CNN
+	1    5150 5450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5150 5300 5150 5250
+Wire Wire Line
+	4750 5250 5150 5250
+Wire Notes Line
+	8750 5100 8750 2250
+Wire Notes Line
+	8750 2250 7100 2250
+Wire Notes Line
+	7100 2250 7100 5100
+Wire Notes Line
+	7100 5100 8750 5100
+Wire Notes Line
+	6950 5100 5450 5100
+Wire Notes Line
+	5450 5100 5450 2250
+Wire Notes Line
+	5450 2250 6950 2250
+Wire Notes Line
+	6950 2250 6950 5100
+Text Notes 5500 2400 0    59   ~ 0
+LED Row 1
+Text Notes 7150 2400 0    59   ~ 0
+LED Row 2
+Wire Wire Line
+	5150 4600 5600 4600
+Wire Wire Line
+	5150 5250 7300 5250
+Wire Wire Line
+	4200 3750 4300 3750
+Wire Wire Line
+	4300 3750 4300 3600
+$EndSCHEMATC
