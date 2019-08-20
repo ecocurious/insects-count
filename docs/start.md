@@ -4,5 +4,5 @@ Damit soll es dann Möglich sein, die Artenvielfalt und deren Veränderung engma
 
 Dazu wurden zwei Verfahren ausgewählt, um die Insekten erkennen und somit auch zählen zu können.
 - optisch mit Hilfe einer Kamera, die Erkennung erfolgt hier mit auf Insekten trainierter KI
-- [Erkennung des Flügelschlags mit einem optischen Mikrofon](http://msei.github.io/insects-count/docs/fluegelschlag.html)
+- [Erkennung des Flügelschlags mit einem optischen Mikrofon](http://msei.github.io/insects-count/fluegelschlag.html)
 
